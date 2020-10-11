@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "X+3vmqigvnzjr6Yce1atz3QU2KfaCMud4XBq3AdEb5e0n4t0eHKXcAoMqdffccJ0APe1NnYXQ33cl/GYqg422w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Vitalii\\OneDrive\\University\\3 семестр\\Теорія Інформації\\1\\ConsoleApp2\\ConsoleApp2\\ConsoleApp2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vitalii\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\Vitalii\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Vitalii\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

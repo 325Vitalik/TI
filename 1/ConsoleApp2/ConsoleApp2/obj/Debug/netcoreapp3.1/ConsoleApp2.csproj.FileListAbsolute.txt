@@ -1,0 +1,40 @@
+C:\Users\Vitalii\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.csprojAssemblyReference.cache
+C:\Users\Vitalii\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.AssemblyInfoInputs.cache
+C:\Users\Vitalii\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.AssemblyInfo.cs
+C:\Users\Vitalii\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\ConsoleApp2.exe
+C:\Users\Vitalii\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\ConsoleApp2.deps.json
+C:\Users\Vitalii\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\ConsoleApp2.runtimeconfig.json
+C:\Users\Vitalii\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\ConsoleApp2.runtimeconfig.dev.json
+C:\Users\Vitalii\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\ConsoleApp2.dll
+C:\Users\Vitalii\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\ConsoleApp2.pdb
+C:\Users\Vitalii\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\Vitalii\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\Vitalii\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Vitalii\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Vitalii\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Vitalii\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.csproj.CopyComplete
+C:\Users\Vitalii\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.dll
+C:\Users\Vitalii\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.pdb
+C:\Users\Vitalii\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.genruntimeconfig.cache
+C:\Users\Vitalii\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\SharpEntropy.dll
+C:\Users\Vitalii\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\ShannonEntropyCal.dll
+C:\Users\Vitalii\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.csproj.CoreCompileInputs.cache
+C:\Users\Vitalii\OneDrive\University\3 семестр\Теорія Інформації\1\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\ConsoleApp2.exe
+C:\Users\Vitalii\OneDrive\University\3 семестр\Теорія Інформації\1\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\ConsoleApp2.deps.json
+C:\Users\Vitalii\OneDrive\University\3 семестр\Теорія Інформації\1\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\ConsoleApp2.runtimeconfig.json
+C:\Users\Vitalii\OneDrive\University\3 семестр\Теорія Інформації\1\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\ConsoleApp2.runtimeconfig.dev.json
+C:\Users\Vitalii\OneDrive\University\3 семестр\Теорія Інформації\1\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\ConsoleApp2.dll
+C:\Users\Vitalii\OneDrive\University\3 семестр\Теорія Інформації\1\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\ConsoleApp2.pdb
+C:\Users\Vitalii\OneDrive\University\3 семестр\Теорія Інформації\1\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\Vitalii\OneDrive\University\3 семестр\Теорія Інформації\1\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\Vitalii\OneDrive\University\3 семестр\Теорія Інформації\1\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Vitalii\OneDrive\University\3 семестр\Теорія Інформації\1\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Vitalii\OneDrive\University\3 семестр\Теорія Інформації\1\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Vitalii\OneDrive\University\3 семестр\Теорія Інформації\1\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.csprojAssemblyReference.cache
+C:\Users\Vitalii\OneDrive\University\3 семестр\Теорія Інформації\1\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.AssemblyInfoInputs.cache
+C:\Users\Vitalii\OneDrive\University\3 семестр\Теорія Інформації\1\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.AssemblyInfo.cs
+C:\Users\Vitalii\OneDrive\University\3 семестр\Теорія Інформації\1\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.csproj.CoreCompileInputs.cache
+C:\Users\Vitalii\OneDrive\University\3 семестр\Теорія Інформації\1\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.csproj.CopyComplete
+C:\Users\Vitalii\OneDrive\University\3 семестр\Теорія Інформації\1\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.dll
+C:\Users\Vitalii\OneDrive\University\3 семестр\Теорія Інформації\1\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.pdb
+C:\Users\Vitalii\OneDrive\University\3 семестр\Теорія Інформації\1\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.genruntimeconfig.cache
