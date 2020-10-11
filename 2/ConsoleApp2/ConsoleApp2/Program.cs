@@ -26,31 +26,35 @@ namespace ConsoleApp2
 
             var qu = new ColorImageQuantizer(new MedianCutQuantizer());
 
-            quatizeAsync(qu, sampled2, 2, 8);
-            quatizeAsync(qu, sampled2, 2, 16);
-            quatizeAsync(qu, sampled2, 2, 64);
-            quatizeAsync(qu, sampled4, 4, 8);
-            quatizeAsync(qu, sampled4, 4, 16);
-            quatizeAsync(qu, sampled4, 4, 64);
+            quantize(qu, sampled2, 8);
+            quantize(qu, sampled2, 16);
+            quantize(qu, sampled2, 64);
+
+            restore(sampled2, bmp, 2);
+            restore(sampled4, bmp, 4);
         }
 
-        public static void quatizeAsync(ColorImageQuantizer qu, Bitmap bmp, int n, int colors)
+        public static void restore(Bitmap sampled, Bitmap bmp, int n)
+        {
+            Console.WriteLine("\n-----------------------------------------------------------------------------------------------------\n");
+            var restoredBicubic = EnlargeImage(sampled, n, InterpolationMode.Bicubic);
+            restoredBicubic.Save($"C:\\Users\\Vitalii\\OneDrive\\University\\3 семестр\\Теорія Інформації\\2\\assets\\restored_{n}_bicubic.jpg", ImageFormat.Jpeg);
+            Console.WriteLine($"Entropy of restored_{n}_bicubic: {FindEntropyOfImage(restoredBicubic)}");
+            Console.WriteLine($"Relative entropy: {FindRelativeEntropyOfTwoImages(bmp, restoredBicubic)}\n");
+
+            var restoredBilinear = EnlargeImage(sampled, n, InterpolationMode.Bilinear);
+            restoredBilinear.Save($"C:\\Users\\Vitalii\\OneDrive\\University\\3 семестр\\Теорія Інформації\\2\\assets\\restored_{n}_bilibiar.jpg", ImageFormat.Jpeg);
+            Console.WriteLine($"Entropy of restored_{n}_bilinear: {FindEntropyOfImage(restoredBilinear)}");
+            Console.WriteLine($"Relative entropy: {FindRelativeEntropyOfTwoImages(bmp, restoredBilinear)}\n");
+        }
+
+        public static void quantize(ColorImageQuantizer qu, Bitmap bmp, int colors)
         {
             Console.WriteLine("\n-----------------------------------------------------------------------------------------------------\n");
             var quantized = qu.ReduceColors(bmp, colors);
-            quantized.Save($"C:\\Users\\Vitalii\\OneDrive\\University\\3 семестр\\Теорія Інформації\\2\\assets\\quntized_{n}_{colors}.jpg", ImageFormat.Jpeg);
-            Console.WriteLine($"Entropy of quntized_{n}_{colors}: {FindEntropyOfImage(quantized)}");
+            quantized.Save($"C:\\Users\\Vitalii\\OneDrive\\University\\3 семестр\\Теорія Інформації\\2\\assets\\quntized_{colors}.jpg", ImageFormat.Jpeg);
+            Console.WriteLine($"Entropy of quntized_{colors}: {FindEntropyOfImage(quantized)}");
             Console.WriteLine($"Relative entropy: {FindRelativeEntropyOfTwoImages(bmp, quantized)}\n");
-
-            var restoredBicubic = EnlargeImage(quantized, n, InterpolationMode.Bicubic);
-            restoredBicubic.Save($"C:\\Users\\Vitalii\\OneDrive\\University\\3 семестр\\Теорія Інформації\\2\\assets\\quntized_{n}_{colors}_restored_bicubic.jpg", ImageFormat.Jpeg);
-            Console.WriteLine($"Entropy of quntized_{n}_{colors}_restored_bicubic: {FindEntropyOfImage(restoredBicubic)}");
-            Console.WriteLine($"Relative entropy: {FindRelativeEntropyOfTwoImages(bmp, restoredBicubic)}\n");
-
-            var restoredBilinear = EnlargeImage(quantized, n, InterpolationMode.Bilinear);
-            restoredBilinear.Save($"C:\\Users\\Vitalii\\OneDrive\\University\\3 семестр\\Теорія Інформації\\2\\assets\\quntized_{n}_{colors}_restored_bilibiar.jpg", ImageFormat.Jpeg);
-            Console.WriteLine($"Entropy of quntized_{n}_{colors}_restored_bilinear: {FindEntropyOfImage(restoredBilinear)}");
-            Console.WriteLine($"Relative entropy: {FindRelativeEntropyOfTwoImages(bmp, restoredBilinear)}\n");
         }
 
         public static Bitmap EnlargeImage(Bitmap original, int scale, InterpolationMode interpolationMode)
@@ -166,61 +170,5 @@ namespace ConsoleApp2
 
             bmp.UnlockBits(bmpData);
         }
-
-        public static Bitmap ChangePixels(Bitmap bmp)
-        {
-            Rectangle rect = new Rectangle(0, 0, bmp.Width, bmp.Height);
-            BitmapData bmpData = bmp.LockBits(rect, ImageLockMode.ReadWrite, bmp.PixelFormat);
-
-            IntPtr ptr = bmpData.Scan0;
-
-            int bytes = Math.Abs(bmpData.Stride) * bmp.Height;
-            byte[] rgbValues = new byte[bytes];
-
-            System.Runtime.InteropServices.Marshal.Copy(ptr, rgbValues, 0, bytes);
-
-            for (int counter = 0; counter < rgbValues.Length; counter += 3)
-            {
-                var r = rgbValues[counter];
-                var g = rgbValues[counter + 1];
-                var b = rgbValues[counter + 2];
-                var tmp = (byte)(r * 0.3 + g * 0.59 + b * 0.11);
-
-                rgbValues[counter] = tmp;
-                rgbValues[counter + 1] = tmp;
-                rgbValues[counter + 2] = tmp;
-            }
-
-            System.Runtime.InteropServices.Marshal.Copy(rgbValues, 0, ptr, bytes);
-
-            bmp.UnlockBits(bmpData);
-
-            return bmp;
-        }
-
-        //public static Bitmap ResizeImage(Image image, int width, int height)
-        //{
-        //    var destRect = new Rectangle(0, 0, width, height);
-        //    var destImage = new Bitmap(width, height);
-
-        //    destImage.SetResolution(image.HorizontalResolution, image.VerticalResolution);
-
-        //    using (var graphics = Graphics.FromImage(destImage))
-        //    {
-        //        graphics.CompositingMode = CompositingMode.SourceCopy;
-        //        graphics.CompositingQuality = CompositingQuality.HighQuality;
-        //        graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
-        //        graphics.SmoothingMode = SmoothingMode.HighQuality;
-        //        graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
-
-        //        using (var wrapMode = new ImageAttributes())
-        //        {
-        //            wrapMode.SetWrapMode(WrapMode.TileFlipXY);
-        //            graphics.DrawImage(image, destRect, 0, 0, image.Width, image.Height, GraphicsUnit.Pixel, wrapMode);
-        //        }
-        //    }
-
-        //    return destImage;
-        //}
     }
 }
